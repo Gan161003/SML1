@@ -1,0 +1,500 @@
+/* ===================================================
+   HOME PAGE
+=================================================== */
+
+.home-page{
+  background:#ffffff;
+  color:#0f172a;
+  min-height:100vh;
+  padding:40px;
+}
+
+
+/* ===================================================
+   HERO SECTION
+=================================================== */
+
+.hero-section{
+
+  min-height:75vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+
+  background:
+  radial-gradient(circle at top left,
+  rgba(59,130,246,.15),
+  transparent 40%),
+
+  radial-gradient(circle at bottom right,
+  rgba(139,92,246,.15),
+  transparent 40%),
+
+  #0f172a;
+
+  border-radius:32px;
+
+  margin-bottom:100px;
+
+  overflow:hidden;
+}
+
+.hero-content{
+  max-width:900px;
+}
+
+.hero-content h1{
+
+  font-size:72px;
+  font-weight:800;
+  line-height:1.1;
+
+  color:white;
+
+  margin-bottom:24px;
+}
+
+.hero-content span{
+  color:#60a5fa;
+}
+
+.hero-content p{
+
+  font-size:20px;
+
+  color:#cbd5e1;
+
+  line-height:1.8;
+
+  margin-bottom:40px;
+}
+
+
+/* ===================================================
+   BUTTONS
+=================================================== */
+
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+}
+
+.primary-btn{
+
+  background:#1346bc;
+
+  color:white;
+
+  border:none;
+
+  padding:15px 32px;
+
+  border-radius:16px;
+
+  cursor:pointer;
+
+  font-size:15px;
+  font-weight:600;
+
+  transition:.3s;
+}
+
+.primary-btn:hover{
+
+  transform:translateY(-4px);
+
+  box-shadow:
+  0 15px 35px rgba(37,99,235,.35);
+}
+
+
+.secondary-btn{
+
+  background:transparent;
+
+  color:white;
+
+  border:1px solid #334155;
+
+  padding:15px 32px;
+
+  border-radius:16px;
+
+  cursor:pointer;
+
+  font-size:15px;
+  font-weight:600;
+
+  transition:.3s;
+}
+
+.secondary-btn:hover{
+  border-color:#0f172a;
+}
+
+
+/* ===================================================
+   COMMON SECTION
+=================================================== */
+
+.platform-section,
+.journey-section,
+.feature-section,
+.ecosystem-section,
+.showcase-section,
+.why-section,
+.cta-section{
+  margin-bottom:110px;
+}
+
+
+.platform-section h2,
+.journey-section h2,
+.feature-section h2,
+.ecosystem-section h2,
+.showcase-section h2,
+.why-section h2,
+.cta-section h2{
+
+  text-align:center;
+
+  font-size:42px;
+
+  margin-bottom:50px;
+
+  color:#0f172a;
+
+  font-weight:700;
+}
+
+
+
+/* ===================================================
+   COMMON CARD STYLE
+=================================================== */
+
+.platform-card,
+.feature-card,
+.showcase-card,
+.ecosystem-box div,
+.journey-flow div{
+
+  background:#fff;
+
+  border:1px solid #e2e8f0;
+
+  border-radius:24px;
+
+  box-shadow:
+  0 5px 25px rgba(0,0,0,.05);
+
+  transition:.3s;
+}
+
+.platform-card:hover,
+.feature-card:hover,
+.showcase-card:hover{
+
+  transform:translateY(-6px);
+
+  border-color:#3b82f6;
+
+  box-shadow:
+  0 20px 40px rgba(0,0,0,.08);
+}
+
+
+/* ===================================================
+   PLATFORM SECTION
+=================================================== */
+
+.platform-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(240px,1fr));
+
+  gap:24px;
+}
+
+.platform-card{
+
+  padding:40px;
+
+  text-align:center;
+}
+
+.platform-icon{
+
+  font-size:42px;
+
+  color:#0f172a;
+
+  margin-bottom:20px;
+}
+
+.platform-card h3{
+
+  margin-bottom:15px;
+
+  font-size:22px;
+}
+
+.platform-card p{
+
+  color:#64748b;
+
+  line-height:1.8;
+}
+
+
+/* ===================================================
+   JOURNEY
+=================================================== */
+
+.journey-flow{
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+}
+
+.journey-flow div{
+
+  padding:20px 30px;
+
+  font-weight:600;
+}
+
+.journey-flow span{
+
+  color:#0f172a;
+
+  font-size:26px;
+}
+
+
+/* ===================================================
+   FEATURE SECTION
+=================================================== */
+
+.feature-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
+
+  gap:28px;
+}
+
+.feature-card{
+  padding:40px;
+}
+
+.feature-icon{
+
+  font-size:40px;
+
+  color:#0f172a;
+
+  margin-bottom:18px;
+}
+
+.feature-card h3{
+  margin-bottom:14px;
+}
+
+.feature-card p{
+
+  color:#64748b;
+
+  line-height:1.9;
+}
+
+
+/* ===================================================
+   ECOSYSTEM
+=================================================== */
+
+.ecosystem-box{
+
+  max-width:1000px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:25px;
+
+  text-align:center;
+}
+
+.ecosystem-box div{
+  padding:40px;
+}
+
+.center-node{
+
+  background:#0f172a !important;
+
+  color:rgb(253, 253, 253);
+
+  border:none !important;
+
+  font-weight:700;
+}
+
+
+/* ===================================================
+   SHOWCASE
+=================================================== */
+
+.showcase-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
+
+  gap:24px;
+}
+
+.showcase-card{
+
+  padding:50px;
+
+  text-align:center;
+
+  font-size:18px;
+
+  font-weight:600;
+}
+
+
+/* ===================================================
+   WHY SECTION
+=================================================== */
+
+.why-section{
+
+  max-width:1000px;
+
+  margin:auto;
+
+  text-align:center;
+}
+
+.why-section p{
+
+  color:#64748b;
+
+  font-size:20px;
+
+  line-height:2;
+}
+
+
+/* ===================================================
+   CTA SECTION
+=================================================== */
+
+.cta-section{
+
+  background:
+
+  linear-gradient(
+  135deg,
+  rgba(59,130,246,.08),
+  rgba(139,92,246,.08));
+
+  border:1px solid #dbeafe;
+
+  border-radius:32px;
+
+  padding:90px 40px;
+
+  text-align:center;
+}
+
+.cta-section p{
+
+  color:#64748b;
+
+  font-size:18px;
+
+  line-height:1.9;
+
+  margin-bottom:30px;
+}
+
+
+/* ===================================================
+   SCROLLBAR
+=================================================== */
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#cbd5e1;
+  border-radius:20px;
+}
+
+
+/* ===================================================
+   MOBILE
+=================================================== */
+
+@media(max-width:768px){
+
+  .home-page{
+    padding:20px;
+  }
+
+  .hero-content h1{
+    font-size:44px;
+  }
+
+  .hero-content p{
+    font-size:16px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .journey-flow{
+    flex-direction:column;
+  }
+
+  .ecosystem-box{
+    grid-template-columns:1fr;
+  }
+
+  .platform-section h2,
+  .journey-section h2,
+  .feature-section h2,
+  .ecosystem-section h2,
+  .showcase-section h2,
+  .why-section h2,
+  .cta-section h2{
+
+    font-size:30px;
+  }
+
+}

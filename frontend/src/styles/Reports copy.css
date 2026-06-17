@@ -1,0 +1,293 @@
+/* =======================================================
+   REPORTS PAGE
+======================================================= */
+
+.reports-page {
+  padding: 30px;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* =======================================================
+   HEADER
+======================================================= */
+
+/* .reports-header {
+  margin-bottom: 30px;
+} */
+
+.reports-header h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.reports-header p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* =======================================================
+   CARDS
+======================================================= */
+
+.report-card,
+.preview-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.report-card:hover,
+.preview-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+/* =======================================================
+   LABELS
+======================================================= */
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* =======================================================
+   REPORT TYPE
+======================================================= */
+
+.report-card select {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  padding: 0 12px;
+  font-size: 14px;
+  background: white;
+  outline: none;
+}
+
+.report-card select:focus {
+  border-color: #2563eb;
+}
+
+/* =======================================================
+   FILTERS
+======================================================= */
+
+.filters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.filters-grid select,
+.filters-grid input {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  padding: 0 14px;
+  font-size: 14px;
+  background: white;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.filters-grid select:focus,
+.filters-grid input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37,99,235,0.12);
+}
+
+/* =======================================================
+   ACTIONS
+======================================================= */
+
+.report-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.report-actions button {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.generate-btn {
+  background: #1e2d57;
+  color: white;
+}
+
+.generate-btn:hover {
+  background: #1158a8;
+  transform: translateY(-2px);
+}
+
+.excel-btn {
+  background: #1e2d57;
+  color: white;
+}
+
+.excel-btn:hover {
+  background: #1158a8;
+  transform: translateY(-2px);
+}
+
+.csv-btn {
+  background: #1e2d57;
+  color: white;
+}
+
+.csv-btn:hover {
+  background: #1158a8;
+  transform: translateY(-2px);
+}
+
+.reset-btn {
+  background: #1e2d57;
+  color: white;
+}
+
+.reset-btn:hover {
+  background: #1158a8;
+  transform: translateY(-2px);
+}
+
+/* =======================================================
+   PREVIEW
+======================================================= */
+
+.preview-card h3 {
+  margin-bottom: 18px;
+  color: #0f172a;
+}
+
+/* =======================================================
+   TABLE
+======================================================= */
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+thead {
+  background: #0f172a;
+}
+
+thead th {
+  color: white;
+  text-align: left;
+  padding: 14px;
+  font-size: 13px;
+  letter-spacing: .4px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eef2f7;
+  transition: all 0.2s ease;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+tbody td {
+  padding: 14px;
+  font-size: 14px;
+  color: #334155;
+}
+
+/* =======================================================
+   STATUS BADGES
+======================================================= */
+
+.sentiment-positive {
+  background: #dcfce7;
+  color: #166534;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sentiment-negative {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sentiment-neutral {
+  background: #e2e8f0;
+  color: #334155;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =======================================================
+   LOADING
+======================================================= */
+
+.loading-box {
+  text-align: center;
+  padding: 50px;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* =======================================================
+   RESPONSIVE
+======================================================= */
+
+@media (max-width: 992px) {
+
+  .reports-page {
+    padding: 18px;
+  }
+
+  .report-actions {
+    flex-direction: column;
+  }
+
+  .report-actions button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .reports-header h1 {
+    font-size: 26px;
+  }
+
+  .filters-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,502 @@
+/* =======================================================
+   MAIN
+======================================================= */
+
+.mentions-page{
+  padding:30px;
+  background:#ffffff;
+  min-height:100vh;
+  font-family:"Inter",sans-serif;
+}
+
+
+/* =======================================================
+   HEADER
+======================================================= */
+
+.mentions-header{
+  margin-bottom:30px;
+}
+
+.mentions-header h2{
+  font-size:42px;
+  font-weight:800;
+  color:#0f172a;
+  letter-spacing:-1px;
+  margin-bottom:8px;
+}
+
+.mentions-header p{
+  color:#64748b;
+  font-size:16px;
+}
+
+
+/* =======================================================
+   PLATFORM TABS
+======================================================= */
+
+.platform-tabs{
+
+  display:flex;
+  gap:15px;
+
+  overflow-x:auto;
+
+  margin-bottom:30px;
+}
+
+.platform-tab{
+
+  min-width:140px;
+
+  background:#ffffff;
+
+  border:1px solid #e2e8f0;
+
+  border-radius:18px;
+
+  padding:18px;
+
+  text-align:center;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+  box-shadow:
+    0 4px 12px rgba(15,23,42,.05);
+}
+
+.platform-tab:hover{
+
+  transform:translateY(-4px);
+
+  border-color:#3b82f6;
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,.1);
+}
+
+.platform-tab.active{
+
+  background:
+    linear-gradient(
+      135deg,
+      #221045,
+      #1d4ed8
+    );
+
+  color:white;
+
+  border-color:transparent;
+}
+
+.platform-icon{
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+
+/* =======================================================
+   KEYWORDS
+======================================================= */
+
+.keywords-section{
+  margin-bottom:30px;
+}
+
+.keywords-section h3{
+  color:#0f172a;
+  margin-bottom:18px;
+}
+
+.keyword-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+  gap:18px;
+}
+
+.keyword-card{
+
+  background:white;
+
+  border:1px solid #e2e8f0;
+
+  border-radius:18px;
+
+  padding:20px;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+  box-shadow:
+    0 4px 12px rgba(15,23,42,.05);
+}
+
+.keyword-card:hover{
+
+  transform:translateY(-4px);
+
+  border-color:#3b82f6;
+}
+
+.keyword-card.selected{
+
+  background:
+    linear-gradient(
+      135deg,
+      #221045,
+      #1d4ed8
+    );
+
+  color:white;
+
+  border:none;
+}
+
+.keyword-card h4{
+  margin:0;
+}
+
+.keyword-card span{
+  color:#64748b;
+}
+
+.keyword-card.selected span{
+  color:#dbeafe;
+}
+
+
+/* =======================================================
+   KPI
+======================================================= */
+
+.kpi-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+  gap:20px;
+
+  margin-bottom:30px;
+}
+
+.kpi-card{
+
+  padding:25px;
+
+  border-radius:20px;
+
+  color:white;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
+
+  transition:.3s;
+}
+
+.kpi-card:hover{
+
+  transform:
+    translateY(-6px)
+    scale(1.02);
+}
+
+.kpi-card h4{
+
+  font-size:14px;
+
+  opacity:.9;
+
+  margin-bottom:12px;
+}
+
+.kpi-card h2{
+
+  font-size:34px;
+
+  font-weight:800;
+}
+
+.kpi-card:nth-child(1){
+  background:
+    linear-gradient(135deg,#221045,#1d4ed8);
+}
+
+.kpi-card:nth-child(2){
+  background:
+    linear-gradient(135deg,#221045,#059669);
+}
+
+.kpi-card:nth-child(3){
+  background:
+    linear-gradient(135deg,#f59e0b,#d97706);
+}
+
+.kpi-card:nth-child(4){
+  background:
+    linear-gradient(135deg,#221045,#dc2626);
+}
+
+.kpi-card:nth-child(5){
+  background:
+    linear-gradient(135deg,#221045,#7c3aed);
+}
+
+.kpi-card:nth-child(6){
+  background:
+    linear-gradient(135deg,#221045,#0284c7);
+}
+
+
+/* =======================================================
+   CHARTS
+======================================================= */
+
+.charts-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(500px,1fr));
+
+  gap:20px;
+
+  margin-bottom:30px;
+}
+
+.chart-box{
+
+  background:white;
+
+  border:1px solid #cbd5e1;
+
+  border-radius:22px;
+
+  padding:20px;
+
+  min-height:380px;
+
+  box-shadow:
+    0 4px 12px rgba(15,23,42,.06),
+    0 12px 32px rgba(15,23,42,.08);
+
+  transition:.3s;
+}
+
+.chart-box:hover{
+
+  border-color:#3b82f6;
+
+  transform:translateY(-4px);
+
+  box-shadow:
+    0 10px 25px rgba(15,23,42,.12);
+}
+
+.chart-box h3{
+
+  color:#415ea2;
+
+  font-size:18px;
+
+  margin-bottom:20px;
+}
+
+.chart-box .recharts-wrapper{
+  margin:auto;
+}
+
+
+/* =======================================================
+   TABLES
+======================================================= */
+
+.tables-stack{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:25px;
+}
+
+.mentions-table-container{
+
+  background:white;
+
+  border:1px solid #e2e8f0;
+
+  border-radius:22px;
+
+  overflow:hidden;
+
+  box-shadow:
+    0 1px 3px rgba(0,0,0,.05),
+    0 10px 30px rgba(0,0,0,.08);
+
+  transition:.3s;
+}
+
+.mentions-table-container:hover{
+
+  border-color:#94a3b8;
+
+  transform:translateY(-3px);
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,.12);
+}
+
+.table-header{
+
+  padding:20px;
+
+  border-bottom:1px solid #e2e8f0;
+}
+
+.table-header h3{
+
+  margin:0;
+
+  color:#0f172a;
+}
+
+.mentions-table{
+
+  width:100%;
+
+  border-collapse:collapse;
+}
+
+.mentions-table thead{
+
+  background:
+    linear-gradient(
+      135deg,
+      #0d214a,
+      #02316b
+    );
+
+  color:white;
+}
+
+.mentions-table th{
+
+  padding:14px;
+
+  text-align:left;
+}
+
+.mentions-table td{
+
+  padding:14px;
+
+  border-bottom:1px solid #e2e8f0;
+
+  color:#334155;
+}
+
+.mentions-table tbody tr{
+
+  transition:.2s;
+}
+
+.mentions-table tbody tr:hover{
+
+  background:
+    rgba(37,99,235,.05);
+}
+
+
+/* =======================================================
+   SENTIMENT BADGES
+======================================================= */
+
+.sentiment-badge{
+
+  padding:7px 14px;
+
+  border-radius:30px;
+
+  font-size:12px;
+
+  font-weight:700;
+}
+
+.sentiment-badge.positive{
+
+  background:rgba(34,197,94,.15);
+
+  color:#059669;
+}
+
+.sentiment-badge.neutral{
+
+  background:rgba(245,158,11,.15);
+
+  color:#d97706;
+}
+
+.sentiment-badge.negative{
+
+  background:rgba(239,68,68,.15);
+
+  color:#dc2626;
+}
+
+
+/* =======================================================
+   SCROLLBAR
+======================================================= */
+
+::-webkit-scrollbar{
+  width:8px;
+  height:8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#cbd5e1;
+  border-radius:20px;
+}
+
+
+/* =======================================================
+   MOBILE
+======================================================= */
+
+@media(max-width:992px){
+
+  .charts-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .mentions-header h2{
+    font-size:28px;
+  }
+
+  .kpi-grid{
+    grid-template-columns:1fr;
+  }
+
+  .mentions-table-container{
+    overflow-x:auto;
+  }
+
+  .mentions-table{
+    min-width:900px;
+  }
+
+}

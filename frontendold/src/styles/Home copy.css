@@ -1,0 +1,347 @@
+.home-page {
+  background: #0f172a;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    radial-gradient(circle at top left,
+      rgba(37,99,235,0.25),
+      transparent 40%),
+    radial-gradient(circle at bottom right,
+      rgba(139,92,246,0.25),
+      transparent 40%);
+      
+  border-radius: 24px;
+  margin-bottom: 60px;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-content span {
+  color: #3b82f6;
+}
+
+.hero-content p {
+  font-size: 20px;
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.primary-btn {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  padding: 14px 28px;
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid #334155;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.secondary-btn:hover {
+  border-color: #3b82f6;
+}
+
+/* ========================================
+   COMMON SECTION
+======================================== */
+
+.platform-section,
+.journey-section,
+.feature-section,
+.ecosystem-section,
+.showcase-section,
+.why-section,
+.cta-section {
+  margin-bottom: 70px;
+}
+
+.platform-section h2,
+.journey-section h2,
+.feature-section h2,
+.ecosystem-section h2,
+.showcase-section h2,
+.why-section h2,
+.cta-section h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+/* ========================================
+   PLATFORM CARDS
+======================================== */
+
+.platform-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.platform-card {
+  background: rgba(30,41,59,0.7);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid #334155;
+  border-radius: 18px;
+
+  padding: 35px;
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+  border-color: #3b82f6;
+}
+
+.platform-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #3b82f6;
+}
+
+/* ========================================
+   JOURNEY
+======================================== */
+
+.journey-flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+.journey-flow div {
+  background: #1e293b;
+  border: 1px solid #334155;
+
+  border-radius: 12px;
+
+  padding: 16px 28px;
+  font-weight: 600;
+}
+
+.journey-flow span {
+  color: #3b82f6;
+  font-size: 22px;
+}
+
+/* ========================================
+   FEATURES
+======================================== */
+
+.feature-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 24px;
+}
+
+.feature-card {
+  background: rgba(30,41,59,0.7);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid #334155;
+  border-radius: 18px;
+
+  padding: 30px;
+}
+
+.feature-card:hover {
+  border-color: #3b82f6;
+}
+
+.feature-icon {
+  font-size: 34px;
+  color: #3b82f6;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* ========================================
+   ECOSYSTEM
+======================================== */
+
+.ecosystem-box {
+  max-width: 900px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+
+  text-align: center;
+}
+
+.ecosystem-box div {
+  background: #1e293b;
+  border: 1px solid #334155;
+
+  border-radius: 18px;
+  padding: 30px;
+}
+
+.center-node {
+  background: #2563eb !important;
+  font-weight: bold;
+}
+
+/* ========================================
+   SHOWCASE
+======================================== */
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px,1fr));
+
+  gap: 20px;
+}
+
+.showcase-card {
+  background: rgba(30,41,59,0.7);
+
+  border: 1px solid #334155;
+  border-radius: 18px;
+
+  padding: 40px;
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.showcase-card:hover {
+  border-color: #3b82f6;
+  transform: translateY(-4px);
+}
+
+/* ========================================
+   WHY SECTION
+======================================== */
+
+.why-section {
+  text-align: center;
+}
+
+.why-section p {
+  max-width: 900px;
+  margin: auto;
+
+  color: #cbd5e1;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* ========================================
+   CTA SECTION
+======================================== */
+
+.cta-section {
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(37,99,235,0.25),
+      rgba(139,92,246,0.25)
+    );
+
+  border: 1px solid #334155;
+  border-radius: 24px;
+
+  padding: 70px 30px;
+}
+
+.cta-section p {
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+  .home-page {
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .journey-flow {
+    flex-direction: column;
+  }
+
+  .ecosystem-box {
+    grid-template-columns: 1fr;
+  }
+}

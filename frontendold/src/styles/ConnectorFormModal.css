@@ -1,0 +1,112 @@
+.cfm-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0,0,0,0.55);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+.cfm-modal {
+  width: 700px;
+
+  max-height: 90vh;
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.15);
+}
+
+.cfm-title {
+  margin: 0 0 24px 0;
+
+  color: #1d2d50;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cfm-input,
+.cfm-select {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  margin-bottom: 14px;
+
+  box-sizing: border-box;
+}
+
+.cfm-input:focus,
+.cfm-select:focus {
+  outline: none;
+
+  border-color: #1d2d50;
+
+  box-shadow:
+    0 0 0 3px rgba(29,45,80,0.1);
+}
+
+.cfm-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  margin-top: 20px;
+}
+
+.cfm-save-btn {
+  background: #1d2d50;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 24px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.cfm-close-btn {
+  background: #f3f4f6;
+
+  color: #333;
+
+  border: none;
+
+  padding: 12px 24px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.cfm-save-btn:hover {
+  opacity: 0.95;
+}
+
+.cfm-close-btn:hover {
+  background: #e5e7eb;
+}
