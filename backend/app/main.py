@@ -86,8 +86,8 @@ app.include_router(
     tags=["Dashboard"]
 )
 
-for route in app.routes:
-    print(route.path)
+# for route in app.routes:
+#     print(route.path)
 
 
 app.include_router(
