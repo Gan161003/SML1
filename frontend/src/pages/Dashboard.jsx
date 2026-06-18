@@ -395,7 +395,7 @@ import {
 import "../styles/Dashboard.css";
 
 // const API = "http://127.0.0.1:8000/dashboard";
-const API =https://sml-backend-agdr.onrender.com/
+const API = "https://sml-backend-agdr.onrender.com/dashboard";
 const COLORS = [
   "#2563eb",
   "#10b981",
