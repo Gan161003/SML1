@@ -4,7 +4,7 @@ import axios from "axios";
 import "../styles/Reports.css";
 
 // const API = "http://127.0.0.1:8000";https://sml-backend-agdr.onrender.com/
-const API = "https://sml-backend-agdr.onrender.com"
+const API = "https://sml-backend-agdr.onrender.com";
 
 export default function Reports() {
 
