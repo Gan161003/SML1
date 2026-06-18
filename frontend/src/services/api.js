@@ -6,6 +6,8 @@
 
 import axios from "axios";
 
-export default axios.create({
+const api = axios.create({
   baseURL: "https://sml-backend-agdr.onrender.com"
 });
+
+export default api;
