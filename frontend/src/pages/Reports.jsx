@@ -87,33 +87,33 @@ const downloadExcel = () => {
 
 
 
-  async function generatePreview() {
+  // async function generatePreview() {
 
-    try {
+  //   try {
 
-      setLoading(true);
+  //     setLoading(true);
 
-      const res = await axios.get(
-        `${API}/reports/preview`,
-        {
-          params: filters
-        }
-      );
+  //     const res = await axios.get(
+  //       `${API}/reports/preview`,
+  //       {
+  //         params: filters
+  //       }
+  //     );
 
-      setPreview(
-        res.data
-      );
+  //     setPreview(
+  //       res.data
+  //     );
 
-    } catch (error) {
+  //   } catch (error) {
 
-      console.log(error);
+  //     console.log(error);
 
-    } finally {
+  //   } finally {
 
-      setLoading(false);
+  //     setLoading(false);
 
-    }
-  }
+  //   }
+  // }
 
   function resetFilters() {
 
@@ -351,12 +351,12 @@ const downloadExcel = () => {
 
       <div className="report-actions">
 
-        <button
+        {/* <button
           className="generate-btn"
           onClick={
             generatePreview
           }
-        >
+        > */}
           Generate Preview
         </button>
 
