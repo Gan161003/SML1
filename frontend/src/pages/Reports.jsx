@@ -351,14 +351,14 @@ const downloadExcel = () => {
 
       <div className="report-actions">
 
-        {/* <button
+         {/* <button
           className="generate-btn"
           onClick={
             generatePreview
           }
-        > */}
+        > 
           Generate Preview
-        </button>
+        </button> */}
 
         <button
           className="excel-btn"
